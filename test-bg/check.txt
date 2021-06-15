@@ -1,0 +1,103 @@
+through dir: Automatic Noise Reduction and Sharpening
+
+The full auto mode automatically removes digital noise while preserving and enhancing text
+detail and edges. Several pre-defined presets and manual adjustments are available to fine-
+tune the performance.
+
+This feature is based on the powerful noise reduction engine used in STOIK Noise AutoFix, and
+adapted to document images. Specific algorithms are included for certain image capturing
+devices such as Nokia smartphones and iPhone 4.
+
+Brightness Equalization
+
+Brightness equalization automatically reduces brightness variations throughout the document
+by making dark (e.g. printed text) and bright (e.g. white paper) areas appear equally lit even in
+mixed lighting conditions such as shots taken in the library. Brightness equalization can
+enhance visual quality of images appearing in the document.
+
+
+
+Brightness and Contrast Correction
+
+Brightness and contrast enhancement automatically corrects document brightness and contrast
+to provide the best image quality. Manual adjustment is an option.
+
+Adaptive Local Contrast Enhancement in Grayscale Documents
+The function makes text and fine detail more legible by automatically incr
+without affecting digital noise or introducing image artefacts. Two paran
+fine-tune the performance for different font sizes and background nois
+
+
+
+Cleaning Document Background
+
+ements such as
+texture, dots, lines, as well photocopying and scanning artefacts common in documents such as
+ID cards and passports, bank checks, tickets, and so on.
+
+Cleaning background before processing the document with an OCR program can dramatically
+increase text recognition quality. As an example, there was an almost 50% increase in text
+recognition quality in a part of a security suite that was capturing passport information.
+
+Whitening document background
+
+Whitening document background is yet another mean to reduce document size and improve
+text legibility in scanned documents. The function makes the whole document background
+white while presenting text characters in black, even if inverse fonts (bright text on dark
+background) or light colors were originally used.
+
+The function can be adjusted for different strength and character sizes. The featur
+handy when faxing or printing complex documents, as it extends cartridge life and lead
+significant reduction of transmission time and costs.
+
+
+
+through add Automatic Noise Reduction and Sharpening
+
+The full auto mode automatically removes digital noise while preserving and enhancing text
+detail and edges. Several pre-defined presets and manual adjustments are available to fine-
+tune the performance.
+
+This feature is based on the powerful noise reduction engine used in STOIK Noise AutoFix, and
+adapted to document images. Specific algorithms are included for certain image capturing
+devices such as Nokia smartphones and iPhone 4.
+
+Brightness Equalization
+
+Brightness equalization automatically reduces brightness variations throughout the document
+by making dark (e.g. printed text) and bright (e.g. white paper) areas appear equally lit even in
+mixed lighting conditions such as shots taken in the library. Brightness equalization can also
+enhance visual quality of images appearing in the document.
+
+Brightness and Contrast Correction
+
+Brightness and contrast enhancement automatically corrects document brightness and contrast
+to provide the best image quality. Manual adjustment is an option.
+
+Adaptive Local Contrast Enhancement in Grayscale Documents
+
+The function makes text and fine detail more legible by automatically increasing local contrast
+without affecting digital noise or introducing image artefacts. Two parameters are available to
+fine-tune the performance for different font sizes and background noise levels
+
+Cleaning Document Background
+
+This feature automatically detects and removes distracting background elements such as
+texture, dots, lines, as well photocopying and scanning artefacts common in documents such as
+ID cards and passports, bank checks, tickets, and so on.
+
+Cleaning background before processing the document with an OCR program can dramatically
+increase text recognition quality. As an example, there was an almost 50% increase in text
+recognition quality in a part of a security suite that was capturing passport information.
+
+Whitening document background
+
+Whitening document background is yet another mean to reduce document size and improve
+text legibility in scanned documents. The function makes the whole document background
+white while presenting text characters in black, even if inverse fonts (bright text on dark
+background) or light colors were originally used.
+
+The function can be adjusted for different strength and character sizes. The feature comes
+handy when faxing or printing complex documents, as it extends cartridge life and leads to
+significant reduction of transmission time and costs.
+

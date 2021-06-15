@@ -18,27 +18,20 @@ if __name__ == '__main__':
     dst = cv2.add(gray, (255 - morphed))
 
     ## extra steps to filter
-    imagec = dst.copy()
-    imagec = cv2.medianBlur(imagec, 5)
-    imagec = cv2.adaptiveThreshold(imagec, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 2)
-
+    dst_n = dst
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
-    opening = cv2.morphologyEx(imagec, cv2.MORPH_OPEN, kernel)
-
-    imagec = 255 - opening
+    dilation = cv2.dilate(dst_n, kernel, iterations=2)
+    dilation = cv2.morphologyEx(dst_n, cv2.MORPH_CLOSE, kernel)
+    #dilation = 255 - dilation
 
     cv2.imshow('img_wanted', dst)
     cv2.imwrite("line_removed.png", dst)
-    cv2.imshow("after_edit", imagec)
-
-    # result[dst == 0] = (255, 255, 255)
-    # retouch_mask = (result <= [250., 250., 250.]).all(axis=2)
-    # result[retouch_mask] = [0, 0, 0]
-    # cv2.imshow('darken', dst)
+    cv2.imwrite("dilated.png", dilation)
+    cv2.imshow("after_edit", dilation)
 
     data = pytesseract.image_to_string(dst)
     print("through dir:", data)
 
-    data = pytesseract.image_to_string(imagec)
-    print("through add", imagec)
+    data = pytesseract.image_to_string(dilation)
+    print("through add", data)
     cv2.waitKey()
