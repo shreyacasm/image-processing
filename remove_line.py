@@ -25,8 +25,8 @@ if __name__ == '__main__':
     #dilation = 255 - dilation
 
     cv2.imshow('img_wanted', dst)
-    cv2.imwrite("line_removed.png", dst)
-    cv2.imwrite("dilated.png", dilation)
+    cv2.imwrite("result/line_removed.png", dst)
+    cv2.imwrite("result/dilated.png", dilation)
     cv2.imshow("after_edit", dilation)
 
     data = pytesseract.image_to_string(dst)
