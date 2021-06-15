@@ -12,7 +12,7 @@ if __name__ == '__main__':
     ## (1) Create long line kernel, and do morph-close-op
     kernel = np.ones((1, 40), np.uint8)
     morphed = cv2.morphologyEx(gray, cv2.MORPH_CLOSE, kernel)
-    cv2.imwrite("line_detected.png", morphed)
+    cv2.imwrite("result/line_detected.png", morphed)
 
     ## (2) Invert the morphed image, and add to the source image:
     dst = cv2.add(gray, (255 - morphed))
