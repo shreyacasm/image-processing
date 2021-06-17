@@ -6,7 +6,7 @@ import imutils
 
 if __name__ == '__main__':
     # image read and data without any operation
-    image = cv2.imread('invoice/testc.png')
+    image = cv2.imread('invoice/test2.png')
     data = pytesseract.image_to_string(image, lang='eng', config='--psm 6')
     print(data)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
 
     # Dilate to connect text and remove dots
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 1))
+    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (20, 1))
     dilate = cv2.dilate(thresh, kernel, iterations=2)
     cnts = cv2.findContours(dilate, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     cnts = cnts[0] if len(cnts) == 2 else cnts[1]
