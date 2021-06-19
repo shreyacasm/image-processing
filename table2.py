@@ -3,7 +3,7 @@ import pytesseract
 
 
 if __name__ == '__main__':
-    image = cv2.imread('invoice/table.png')
+    image = cv2.imread('invoice/test4.png')
     result = image.copy()
     gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
     thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]

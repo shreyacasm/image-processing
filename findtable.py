@@ -48,10 +48,10 @@ if __name__ == '__main__':
     print(data)
 
     cv2.imshow('thresh', thresh)
-    cv2.imwrite('result/invoice/thresh.png', thresh)
+    cv2.imwrite('result/invoice/thresh-1.png', thresh)
     cv2.imshow('dilate', dilate)
     cv2.imwrite('result/invoice/dilate.png', dilate)
     cv2.imshow('result', result)
-    cv2.imwrite('result/invoice/result.png', result)
+    cv2.imwrite('result/invoice/result-1.png', result)
 
     cv2.waitKey()
