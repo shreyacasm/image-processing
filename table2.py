@@ -3,10 +3,12 @@ import pytesseract
 
 
 if __name__ == '__main__':
-    image = cv2.imread('invoice/test4.png')
+    image = cv2.imread('invoice/padding-names5.png')
     result = image.copy()
     gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
     thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
+    data = pytesseract.image_to_string(thresh, lang='eng', config='--psm 6')
+    print("original :", data)
 
     # Remove horizontal lines
     horizontal_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (40,1))
@@ -28,7 +30,10 @@ if __name__ == '__main__':
     cv2.imshow('result', result)
     cv2.imwrite('result/invoice/thresh.png', thresh)
     cv2.imwrite('result/invoice/result.png', result)
-
+    # value = [0, 0, 0]
+    # result = cv2.copyMakeBorder(result, 100, 100, 100, 100, cv2.BORDER_CONSTANT, None, value)
+    # cv2.imshow('final-result', result)
+    # cv2.imwrite('result/invoice/result-fin.png', result)
     data = pytesseract.image_to_string(result, lang='eng', config='--psm 6')
-    print(data)
+    print("After", data)
     cv2.waitKey()

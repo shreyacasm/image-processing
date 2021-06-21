@@ -6,7 +6,7 @@ import imutils
 
 if __name__ == '__main__':
     # image read and data without any operation
-    image = cv2.imread('invoice/test2.png')
+    image = cv2.imread('invoice/test1.jpg')
     data = pytesseract.image_to_string(image, lang='eng', config='--psm 6')
     print(data)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
