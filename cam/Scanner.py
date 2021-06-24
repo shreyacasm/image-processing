@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import mapper
-image=cv2.imread("test_img.jpg")   #read in the image
+image=cv2.imread("bill2.jpg")   #read in the image
 image=cv2.resize(image,(1300,800)) #resizing because opencv does not work well with bigger images
 orig=image.copy()
 
